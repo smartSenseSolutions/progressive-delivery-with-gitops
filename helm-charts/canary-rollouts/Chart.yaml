@@ -1,0 +1,6 @@
+apiVersion: v2
+name: hello-world-canary-release
+description: A Helm chart for deploying a Node.js app with Argo Rollouts Canary strategy
+type: application
+version: 1.0.0
+appVersion: "1.0.0"

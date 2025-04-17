@@ -1,0 +1,24 @@
+# Stable service
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.app.name }}-active
+spec:
+  selector:
+    app: {{ .Values.app.name }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.containerPort }}
+
+---
+# Canary service
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.app.name }}-preview
+spec:
+  selector:
+    app: {{ .Values.app.name }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.containerPort }}

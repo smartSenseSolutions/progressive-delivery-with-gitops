@@ -1,0 +1,6 @@
+apiVersion: v2
+name: hello-world-blue-green-release
+description: A Helm chart for deploying a Node.js app with Argo Rollouts Blue Green strategy
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
