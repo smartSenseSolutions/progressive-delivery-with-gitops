@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: git@github.com:smartSenseSolutions/progressive-delivery-with-gitops
     chart: helm-charts/canary-rollouts
-    targetRevision: "main"
+    targetRevision: main
     helm:
       releaseName: canary-rollout
       valueFiles:
