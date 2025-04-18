@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:smartSenseSolutions/progressive-delivery-with-gitops
+    repoURL: git@github.com:smartSenseSolutions/progressive-delivery-with-gitops.git
     chart: helm-charts/canary-rollouts
     targetRevision: main
     helm:
