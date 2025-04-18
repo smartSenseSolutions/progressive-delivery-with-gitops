@@ -4,7 +4,6 @@ metadata:
   name: {{ .Values.app.name }}-ing-active
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    nginx.ingress.kubernetes.io/cluster-issuer: "letsencrypt-prod"
 spec:
   ingressClassName: nginx
   tls:

@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: blue-green-rollout
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:smartSenseSolutions/progressive-delivery-with-gitops.git
+    path: helm-charts/blue-green-rollouts
+    targetRevision: main
+    helm:
+      releaseName: blue-green-rollout
+      valueFiles:
+      - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
