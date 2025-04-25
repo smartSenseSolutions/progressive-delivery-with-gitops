@@ -7,7 +7,7 @@ This repository demonstrates a GitOps approach for progressive delivery using Ar
 - Kubernetes cluster, Kubectl
 - Helm
 - DNS Records
-- Argo CD: [Ref Helm Charts](https://github.com/smartSenseSolutions/progressive-delivery-with-gitops/tree/main/helm-charts/argo-rollouts)
+- Argo CD: [Ref Helm Charts](https://github.com/smartSenseSolutions/progressive-delivery-with-gitops/tree/main/helm-charts/argocd)
 - Argo Rollouts: [Ref Helm Charts](https://github.com/smartSenseSolutions/progressive-delivery-with-gitops/tree/main/helm-charts/argo-rollouts)
 - Cert Manager: [Ref Helm Charts](https://github.com/smartSenseSolutions/progressive-delivery-with-gitops/tree/main/helm-charts/cert-manager)
 - Containerized App: [Ref Sample Node App](https://github.com/smartSenseSolutions/progressive-delivery-with-gitops/tree/main/sample-node-app)
