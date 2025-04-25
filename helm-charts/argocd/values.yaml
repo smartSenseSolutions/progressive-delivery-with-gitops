@@ -1,0 +1,5 @@
+configs:
+  params:
+    server.insecure: true
+  secret:
+    argocdServerAdminPassword: "bcrypt encoded string value"
