@@ -7,10 +7,10 @@ image:
   repository: sample-node-app
   tag: v1
 
-containerPort: 8000
+containerPort: 8080
 
 service:
-  port: 8000
+  port: 8080
 
 ingress:
   host: hello-world-canary.learn.smartsenselabs.com
