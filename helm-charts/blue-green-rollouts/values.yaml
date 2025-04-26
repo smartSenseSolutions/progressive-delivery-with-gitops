@@ -5,7 +5,7 @@ replicaCount: 4
 
 image:
   repository: sample-node-app
-  tag: v2
+  tag: v1
 
 containerPort: 8080
 
