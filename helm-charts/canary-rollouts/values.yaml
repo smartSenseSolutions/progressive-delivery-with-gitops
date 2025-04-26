@@ -4,7 +4,7 @@ app:
 replicaCount: 4
 
 image:
-  repository: hello-world
+  repository: sample-node-app
   tag: v1
 
 containerPort: 8000
